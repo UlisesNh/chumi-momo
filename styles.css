@@ -1,0 +1,153 @@
+body {
+    font-family: 'Gaegu', cursive;
+    background-color: aquamarine;
+}
+
+p {
+    font-size: larger;
+}
+
+/* Estilos para la imagen flotante */
+#videoContainer {
+    position: relative;
+  }
+  
+  #videoImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+  }
+  
+  /* Estilos para el texto adyacente */
+  #textoContainer {
+    display: none;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: lightgray;
+    width: 200px;
+  }
+  
+.contenedor {
+    background-color: pink;
+    border: 13px solid black;
+    border-radius: 10px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.video {
+    
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Estilo base del botón */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    background-color: lightsteelblue;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+/* Estilo cuando el cursor está sobre el botón */
+.button:hover {
+    background-color: #512b58;
+    color: #ffffff;
+}
+
+/* Estilo cuando el botón es presionado */
+.button:active {
+    background-color: #341c38;
+}
+
+/* Estilo cuando el botón está deshabilitado */
+.button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Estilo de un botón primario */
+.primary-button {
+    background-color: #512b58;
+    color: #ffffff;
+}
+
+/* Estilo de un botón secundario */
+.secondary-button {
+    background-color: #ffffff;
+    color: #512b58;
+    border: 2px solid #512b58;
+}
+
+/* Estilo de un botón de contorno */
+.outline-button {
+    background-color: transparent;
+    color: #512b58;
+    border: 2px solid #512b58;
+}
+
+/* Estilo de un botón en 3D */
+.button-3d {
+    background-color: #512b58;
+    color: #ffffff;
+    box-shadow: 0px 3px 0px 0px #341c38;
+    transition: transform 0.3s ease;
+}
+
+.button-3d:hover {
+    transform: translateY(2px);
+}
+
+.button-3d:active {
+    transform: translateY(4px);
+}
+
+/* Media query para pantallas pequeñas */
+@media screen and (max-width: 480px) {
+    .contenedor {
+        border-width: 8px;
+    }
+
+    .button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+}
+
+/* Media query para pantallas medianas */
+@media screen and (max-width: 768px) {
+    .button {
+        padding: 6px 12px;
+        font-size: 10px;
+    }
+}
+
+/* Media query para pantallas grandes */
+@media screen and (min-width: 1200px) {
+    .button {
+        padding: 14px 28px;
+        font-size: 18px;
+    }
+}
